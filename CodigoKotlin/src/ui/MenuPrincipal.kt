@@ -7,7 +7,7 @@ class MenuPrincipal : MenuAbstrato() {
     private val menuVenda = MenuVenda()
 
     override fun executarOpcao(opcao: Int, scanner: Scanner): Int {
-        return when (opcao) {
+        return when (opcao) {  // Estruturas de controle Kotlim - When Java - Switch
             0 -> 0
             1 -> {
                 menuProduto.mostrarMenu(scanner)

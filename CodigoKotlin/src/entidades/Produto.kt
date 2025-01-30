@@ -1,6 +1,6 @@
 package clp.tp.entidades
 
-class Produto : Entidade {
+class Produto : Entidade {   // propriedade de classe
     var nome: String
     var valor: Double
 

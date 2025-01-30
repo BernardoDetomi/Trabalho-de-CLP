@@ -7,7 +7,7 @@ import clp.tp.data.DAOProduto
 import clp.tp.data.DAOVenda
 
 class MenuVenda : MenuEntidade() {
-    private val daoVenda = DAOVenda.getInstance()
+    private val daoVenda = DAOVenda.getInstance() // Declaração de variáveis -> imutável
     private val daoProduto = DAOProduto.getInstance()
 
     override fun mostrarTitulo() {
@@ -22,8 +22,8 @@ class MenuVenda : MenuEntidade() {
         val venda = Venda()
         
         while (true) {
-            var produto: Produto? = null
-            var qtd = 0
+            var produto: Produto? = null  // mutável e nullable
+            var qtd = 0  // Sistema de Tipos -> tipo inferido automaticamente
 
             while (true) {
                 try {

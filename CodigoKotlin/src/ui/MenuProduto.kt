@@ -27,7 +27,7 @@ class MenuProduto : MenuEntidade() {
                 print("Digite o valor: ")
                 valor = scanner.nextDouble()
 
-                if (nome.isNullOrEmpty() || valor <= 0.0) {
+                if (nome.isNullOrEmpty() || valor <= 0.0) {   // Estruturas de controle de fluxo
                     throw Exception("\nFavor informar os dados corretamente.\n")
                 } else {
                     break
